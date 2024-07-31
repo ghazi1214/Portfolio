@@ -22,7 +22,9 @@ const skillsStyles = css`
   }
 
   .skill-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 10px;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -35,6 +37,12 @@ const skillsStyles = css`
 
   .skill-button:hover {
     transform: translateY(-5px) scale(1.1);
+  }
+
+  .svg-icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
   }
 `;
 
@@ -61,6 +69,9 @@ const Skills = () => {
       </ul>
       <div className="skill-button shadow-xl" onClick={() => handleButtonClick('Web Development Details')}>
         Learn More
+        <svg className="animate-bounce w-6 h-6 text-gray-900 svg-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </div>
 
       <h3 className="mt-4">Data Entry:</h3>
@@ -70,6 +81,9 @@ const Skills = () => {
       </ul>
       <div className="skill-button shadow-xl" onClick={() => handleButtonClick('Data Entry Details')}>
         Learn More
+        <svg className="animate-bounce w-6 h-6 text-gray-900 svg-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </div>
 
       <h3 className="mt-4">Assignment and Project Management:</h3>
@@ -79,6 +93,9 @@ const Skills = () => {
       </ul>
       <div className="skill-button shadow-xl" onClick={() => handleButtonClick('Project Management Details')}>
         Learn More
+        <svg className="animate-bounce w-6 h-6 text-gray-900 svg-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </div>
 
       <h3 className="mt-4">Graphic Designing:</h3>
@@ -88,6 +105,9 @@ const Skills = () => {
       </ul>
       <div className="skill-button shadow-xl" onClick={() => handleButtonClick('Graphic Designing Details')}>
         Learn More
+        <svg className="animate-bounce w-6 h-6 text-gray-900 svg-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </div>
 
       <h3 className="mt-4">Entrepreneurship:</h3>
@@ -98,6 +118,9 @@ const Skills = () => {
       </ul>
       <div className="skill-button shadow-xl" onClick={() => handleButtonClick('Entrepreneurship Details')}>
         Learn More
+        <svg className="animate-bounce w-6 h-6 text-gray-900 svg-icon" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
       </div>
 
       {isPopupOpen && <Popup content={popupContent} onClose={handleClosePopup} />}

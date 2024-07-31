@@ -9,7 +9,7 @@ const headerStyles = css`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgba(45, 45, 45, 0.8);
+  background-color: rgba(45, 45, 45, 0.8); /* Add some transparency */
   z-index: 10;
 
   h1 {
