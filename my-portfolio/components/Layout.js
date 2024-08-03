@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import Header from './Header';
+import Footer from './Footer';
 
 const layoutStyles = css`
   display: flex;
@@ -18,6 +19,7 @@ const Layout = ({ children }) => {
     <div css={layoutStyles}>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };

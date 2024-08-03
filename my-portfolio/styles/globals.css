@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-cover bg-fixed text-white font-sans;
-  background-image: url('/background.jpg');
+html {
+  scroll-behavior: smooth;
 }
 
-a {
-  @apply text-white no-underline;
+body {
+  background-color: #1a202c; /* Dark mode background */
+  color: #f7fafc; /* Dark mode text color */
+}
+
+body.dark {
+  background-color: #f7fafc; /* Light mode background */
+  color: #1a202c; /* Light mode text color */
 }
